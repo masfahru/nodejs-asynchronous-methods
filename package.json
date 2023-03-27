@@ -1,0 +1,50 @@
+{
+  "name": "nodejs-asynchronous-methods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": true,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Imam Fahrur Rofi",
+    "email": "imam@fahru.my.id",
+    "url": "https://fahru.my.id"
+  },
+  "contributors": [],
+  "scripts": {
+    "prestart": "rimraf ./build && eslint ./src --ext .ts && tsc --diagnostics",
+    "start": "node ./build/index.js",
+    "lint": "eslint ./src --ext .ts"
+  },
+  "devDependencies": {
+    "@types/needle": "^3.2.0",
+    "@types/node": "16.18.16",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "fastq": "^1.15.0",
+    "needle": "^3.2.0"
+  }
+}

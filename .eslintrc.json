@@ -1,0 +1,15 @@
+{
+  "env": {
+    "es6": true,
+    "commonjs": false,
+    "browser": false,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off"
+  }
+}
